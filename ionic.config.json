@@ -1,0 +1,7 @@
+{
+  "name": "punthub-sandbox",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
