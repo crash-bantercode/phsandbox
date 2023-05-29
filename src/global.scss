@@ -37,16 +37,23 @@ ion-header {
 
 ion-toolbar {
     
+    --min-height: 70px;
 
     ion-title {
         color: var(--ion-color-primary);
     }
 
-    ion-button {
-        --background-color: var(--ion-color-primary);
-        
-        ion-icon {
-            color: var(--ion-color-primary);
+    ion-buttons {
+
+        height: 60px;
+
+        ion-button {
+            --background-color: var(--ion-color-primary);
+            height: 60px;
+            
+            ion-icon {
+                color: var(--ion-color-primary);
+            }
         }
     }
 
@@ -61,6 +68,45 @@ ion-tabs {
 
 ion-button {
     color: var(--ion-color-dark);
+}
+
+ion-menu {
+    ion-content {
+        
+        ion-item {
+            --color: var(--ion-color-primary);
+            --background: var(--ion-color-dark);
+            ion-label {
+                --color: var(--ion-color-primary);
+                --background: var(--ion-color-dark);
+            }
+            
+        }
+
+        ion-item.logout {
+            --color: var(--ion-color-tertiary);
+            --background: var(--ion-color-dark);
+            ion-label {
+                --color: var(--ion-color-tertiary);
+                --background: var(--ion-color-dark);
+            }
+            
+        }
+        
+
+        ion-item.logout::part(detail-icon) {
+            color: var(--ion-color-tertiary);
+            opacity: 1;
+            font-size: 20px;
+        }
+
+        ion-item::part(detail-icon) {
+            color: var(--ion-color-primary);
+            opacity: 1;
+            font-size: 20px;
+          }
+        
+    }
 }
   
   
